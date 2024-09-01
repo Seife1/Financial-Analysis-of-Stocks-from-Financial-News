@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Stock News Sentiment Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <center>
+        <h1>Financial Stock News Sentiment Analyzer</h1>
+        <h3>Enter a Stock Ticker Symbol to See the Mean Sentiment Scores of the Stock</h3>
+
+        <form action="sentiment" method="POST" align="center">
+            <b>Stock Ticker Symbol:</b>
+            <input id="text_field" name="ticker" type="text" required> 
+            <center><input id="submit_button" type="Submit" class="push_button blue"></center>
+        </form>
+        
+        <p>
+            The sentiment is obtained by performing sentiment analysis on recent news headlines using the 
+            <a href="https://www.nltk.org/_modules/nltk/sentiment/vader.html">NLTK Sentiment Vader Python library</a>.
+            <br><br>
+        </p>
+    </center>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
