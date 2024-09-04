@@ -1,11 +1,16 @@
-### Exploratory Data Analysis (EDA)
-Exploratory Data Analysis (EDA) is essential to uncover initial trends and patterns within the FNSPID dataset. The EDA process includes:
-
-### Sentiment Analysis Methodology
-The sentiment analysis was performed using NLTK Sentiment Vader Python library. The primary objective was to evaluate the sentiment associated with each stock ticker mentioned in the headlines.
-
-### Topic Modeling Methodology
-To understand the themes and topics covered by different publishers, I applied the concept of Topic Modeling, a technique within Natural Language Processing (NLP).
-
-### Seasonal Decomposition of Time Series Data
-To analyze the time series data effectively, I performed a seasonal decomposition using the seasonal_decompose function from the statsmodels library. This decomposition separated the time series into its fundamental components: trend, seasonal, and residual.
+**Task 1: Exploratory Data Analysis (EDA)**
+* Imports and Reading Data: Imported necessary libraries and loaded the datasets.
+* Data Understanding: Analyzed headline lengths, article counts per publisher, and publication trends.
+* Sentiment Analysis: Applied VADER and TextBlob for sentiment scoring and categorized sentiments.
+* Topic Modeling: Identified common topics in news headlines using Latent Dirichlet Allocation (LDA).
+* Challenges: Addressed large dataset sizes and integration issues.
+**Task 2: Technical Analysis**
+* Data Preparation: Loaded stock price data and ensured proper formatting.
+* Technical Analysis: Used TA-Lib to compute indicators like Moving Averages, RSI, and MACD.
+* Visualization: Created visualizations to interpret the impact of technical indicators on stock prices.
+* Fundamental Financial Analysis: Analyzed daily returns using pyfolio.
+**Task 3: Correlation Analysis**
+* Date Alignment: Ensured datasets were aligned by date and stock symbols, addressing issues with time zone and data degradation.
+* Sentiment Analysis: Applied TextBlob to calculate sentiment polarity of news headlines.
+* Daily Returns Calculation: Computed percentage change in stock prices.
+* Correlation Analysis: Analyzed the correlation between sentiment scores and stock returns.
